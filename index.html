@@ -25,7 +25,9 @@ function initialize() {
   var mapOptions = {
     zoom: 15,													// higher number => closer
     center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	streetViewControl: false,  									// remove street view icon
+	mapTypeControl: false    									// remove map type tabs
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); 
 			// map-mcanvas => div with #map-canvas in html code
