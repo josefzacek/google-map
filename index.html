@@ -30,10 +30,11 @@ function initialize() {
 	mapTypeControl: false    									// remove map type tabs
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions); 
-			// map-mcanvas => div with #map-canvas in html code
+  var iconBase = 'http://maps.google.com/mapfiles/ms/icons/golfer.png';  // url of marker image 			// map-mcanvas => div with #map-canvas in html code
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
+      icon: iconBase,
       title: 'Neenan Travel'  // title when hovered over marker
   });
   
